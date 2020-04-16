@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="template10_1.css" type="text/css" >
+  <link rel="stylesheet" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="icon" href="img/proficon.png" >
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        
+        }
+     
+       
+    </style>
+    
+   
+</head>
+<body id="body" onload="startTimer()">
+    
+    
+    
+    
+    <!-- navigation bar -->
+    
+                      
+    <div class="container-fluid  fixed-top home bg-white shadow-lg"> 
+        <div class="navbar-nav navbar-expand mr-3 ml-3  p-1" style="font-size:8px;" > 
+            <div class=" d-flex  w-100 align-content-center">
+                
+                <div class=" flex-fill w-75 mr-auto " >
+                    <a class="navbar-brand "  href="#"> <img src="img/logo.png" title="logo" alt="logo"> </a> 
+                    
+                </div>
+                
+            
+                <div class="flex-fill for-large w-25 mr-5 ">
+                <ul class="navbar-nav  align-self-center  ul-2 p-0 ">
+                <li class="nav-item "> <a class="nav-link a2 active "   href="#"> HOME  </a></li>
+                <li class="nav-item"> <a class="nav-link a2" href="#about"> ABOUT  </a></li>
+                <li class="nav-item"> <a class="nav-link a2 " href="#services"> SERVICES </a></li>
+                <li class="nav-item"> <a class="nav-link a2" href="#portofile"> PORTOFILE </a></li>
+                <li class="nav-item"> <a class="nav-link a2 " href="#bricing"> BRICING   </a></li>
+                <li class="nav-item dropdown  "> 
+                    <a class="nav-link a2 dropdown-toggle" data-toggle="dropdown" href="#blog"> BLOG </a>
+                    <div class="dropdown-menu  a2 p-0 m-0 " style="width:100%;" > 
+                         <a class="dropdown-item a2 p-1 m-0 " href="#bloghome " style="font-size:8px">  Blog Home</a>
+                         <a class="dropdown-item a2 p-1 m-0 " href="#blogsingle " style="font-size:8px"> Blog Single </a> 
+                    </div>
+                
+                </li>
+                <li class="nav-item  drop1"> 
+                    <a class="nav-link a2 dropdown-toggle" href="#pages"> PAGES  </a>
+                    <div class="dropdown1 ">
+                        <a href="#elements" class="a2 p-1 d-block" > Elements </a>
+                        <div class="drop2  dropdown dropleft">
+                            <a href="#level2" class="a2 p-1 d-block dropdown-toggle " data-toggle="dropdown"> Levels </a>
+                            <div class="dropdown2">
+                                <a href="#elements" class="a2 p-1 d-block" > level1 </a>
+                                <a href="#elements" class="a2 p-1 d-block" > level2 </a>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link a2" href="#contacts"> CONTACTS </a></li>
+                </ul>
+            </div>
+                
+                
+                <div class="  for-small dropdown flex-fill w-25" >
+                     <a class=" d bg-dark text-white p-2 btn font1 " id="drop12"  href="#moda1" data-toggle="modal"   >
+                         <span class="pl-1"> MENU<i class="fa fa-angle-double-down pl-2"> </i>   </span>     
+                    </a>
+                    
+                        
+                    
+                </div>
+               
+                
+
+                
+            </div>
+
+        </div>
+        
+        
+        
+    </div>
+   
+    
+    
+    
+    <!-- navigation bar for small devices --> 
+    
+    
+    
+    <!-- <div class="modal fade  " id="moda1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class=" drop">
+                    <div class="drop  " id="hid0"> 
+        <ul class=" nav  ">
+            <li class="nav-item"> <a class="nav-link text-white" href="#"> HOME </a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#"> ABOUT</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#"> SERVICES</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#"> POROFILE</a></li>
+            <li class="nav-item"> <a class="nav-link text-white" href="#"> BRICING</a></li>
+            <li class="nav-item "> <a class="nav-link text-white " id="blog" href="#">
+                BLOG  <i class="fa fa-angle-double-down "> </i></a>
+            </li>
+            <div class="pl-4 hidden " id="hid1">
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> BLOG Single</a></li>
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> BLOG Home</a></li>
+            </div >
+            <li class="nav-item"><a class="nav-link text-white" href="#" id="page"> 
+                PAGES  <i class="fa fa-angle-double-down "> </i> </a>
+            </li>
+            <div class="pl-4 hidden " id="hid2">
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> Element</a></li>
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> 
+                    level2  <i class="fa fa-angle-double-down "> </i></a>
+                </li>
+                <div class="pl-4 hidden  " id="hid3">
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> Item One </a></li>
+                <li class="nav-item "> <a class="nav-link text-white" href="#"> ITem Two </a></li>
+                </div >
+            </div >
+            <li class="nav-item"><a class="nav-link text-white" href="#"> CONTACTS</a></li>
+        </ul>
+    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="modal  " id="moda1" >
+        
+        <div class="drop  " id="hide0"  > 
+          
+            <ul class=" nav flex-column    ">
+                
+            
+            <li class="nav-item "> <a class="nav-link text-white" href="template10.html"> HOME </a></li>
+            <li class="nav-item "> <a class="nav-link text-white" href="#"> ABOUT</a></li>
+            <li class="nav-item "> <a class="nav-link text-white" href="#"> SERVICES</a></li>
+            <li class="nav-item "> <a class="nav-link text-white" href="#"> POROFILE</a></li>
+            <li class="nav-item "> <a class="nav-link text-white" href="#"> BRICING</a></li>
+            <li class="nav-item  "> <a class="nav-link text-white " id="blog" href="#">
+                BLOG  <i class="fa fa-angle-double-down "> </i></a>
+            </li>
+            <div class="pl-3 hidden   " id="hid1" >
+                <li class="nav-item  "> <a class="nav-link text-white" href="#"> BLOG Single</a></li>
+                <li class="nav-item  "> <a class="nav-link text-white" href="#"> BLOG Home</a></li>
+            </div >
+            <li class="nav-item "><a class="nav-link text-white" href="#" id="page"> 
+                PAGES  <i class="fa fa-angle-double-down "> </i> </a>
+            </li>
+            <div class="pl-3 hidden  " id="hid2">
+                <li class="nav-item  "> <a class="nav-link text-white " href="#"> Element</a></li>
+                <li class="nav-item   "> <a class="nav-link text-white " href="#"> 
+                    level2  <i class="fa fa-angle-double-down "> </i></a>
+                </li>
+                <div class="pl-3 hidden   " id="hid3">
+                <li class="nav-item  "> <a class="nav-link text-white" href="#"> Item One </a></li>
+                <li class="nav-item  "> <a class="nav-link text-white" href="#"> ITem Two </a></li>
+                </div >
+            </div >
+            <li class="nav-item "><a class="nav-link text-white" href="#"> CONTACTS</a></li>
+           
+                
+                
+        </ul>
+    </div>
+            
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- headder -->
+    
+    
+    <div class=" flex1 p-3 mb-5">
+        <div class="container">
+            <div class="row mt-5" >
+                <div class="col-6 align-self-center "  > 
+                    <div class="font1">
+                        <p  >THIS IS ME </p>
+                        <h3> PHILIP GILBERT</h3>
+                        <p class="text-secondary">
+                            You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.
+                        </p>
+                    </div>
+                    <button  type="button" class="btn1 butt p-2"> DISCOVER NOW </button>
+                    
+                </div>
+                
+                <div class="col-6  align-self-center  "    >  
+                    <img src="img/hero-img.png" alt="hero" title="hero" class="img2"  > 
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- header about --> 
+    
+    
+    <div class=" flex2 p-3 mb-5 ">
+        <div class="container">
+            <div class="row  ">
+                
+                <div class="col-6  align-self-center  "    >  
+                    <img src="img/about-img.png" alt="hero" title="hero" class="img2"  > 
+                </div>
+                
+                <div class="col-6  align-self-center  "  > 
+                    <div class="font1">
+                        <p  >ABOUT ME </p>
+                        <h3> PERSONAL DETAILS</h3>
+                        <p class="text-secondary">Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco..</p>
+                    </div>
+                    <button  type="button" class="btn1 butt p-2"> VIEW FULL DETAILS</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <!-- OFFERs -->
+    
+    
+    <div class="container  mb-5" id="co3">
+        <div class="row justify-content-center align-content-center align-self-center mb-5" >
+            <div class="col-xl-6 font1 text-center">
+                <h3 class="">My Offered Services </h3>
+                <p class="text-secondary">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+            </div>
+        </div>
+        
+        
+        <div class="row justify-content-start align-content-center  mb-5">
+            <div class=" col-lg-4 col-md-6   align-self-center "> 
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-pie-chart"></i>  </span>
+                         <p> Web Design</p>
+                    </div>
+                    <p class="text-secondary">
+                        “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
+                    </p>
+                </div>
+            
+            </div>
+            
+            <div class=" col-lg-4 col-md-6 ">
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-laptop "></i>  </span>
+                         <p> Web Development</p>
+                    </div>
+                    <p class="text-secondary">
+                        If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
+                    </p>
+                </div>
+            </div>
+            
+            <div class=" col-lg-4 col-md-6 ">
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-camera"></i>  </span>
+                         <p> Photography</p>
+                    </div>
+                    <p class="text-secondary">
+                        Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills
+                    </p>
+                </div>
+            </div>
+        
+        
+        
+        
+            <div class=" col-lg-4  col-md-6 align-self-center offer-hover"> 
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-photo"></i>  </span>
+                         <p> Clipping Path</p>
+                    </div>
+                    <p class="text-secondary">
+                        Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
+                    </p>
+                </div>
+            
+            </div>
+            
+            <div class=" col-lg-4 col-md-6 offer-hover">
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-tablet "></i>  </span>
+                         <p> App Interface</p>
+                    </div>
+                    <p class="text-secondary">
+                        Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts..
+                    </p>
+                </div>
+            </div>
+            
+            <div class=" col-lg-4 col-md-6 offer-hover">
+                <div class="font1 text-center">
+                    <div class="font2">
+                         <span> <i class="fa fa-rocket"></i>  </span>
+                         <p> Graphic Design</p>
+                    </div>
+                    <p class="text-secondary">
+                       You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
+                    </p>
+                </div>
+            </div>
+            
+            </div>
+        
+        
+
+    
+    </div>
+   
+    
+    
+    
+    
+    
+    <!-- projects-->
+    
+    <div  class=" lnrgrad  pt-3 pb-3 mb-5 h-25 ">
+        <div class="container ">
+            <div class=" row  justify-content-start  align-content-around text-center ">
+                <div class=" col-6 col-lg-3 counter align-self-center w-25 "> 
+                    <h3 class="font-weight-bolder code">2563</h3>
+                    <p class="small"> Projects Completed </p>
+                </div>
+                <div class=" col-6 col-lg-3 counter align-self-center w-25 "> 
+                   <h3 class="font-weight-bolder code">7684</h3>
+                    <p class="small"> Happy Clients </p>
+                </div>
+                <div class="col-6 col-lg-3 counter align-self-center w-25 "> 
+                    <h3 class="font-weight-bolder code">2039</h3>
+                    <p class="small"> Cups of Coffee </p>
+                </div>
+                <div class=" col-6 col-lg-3 counter align-self-center w-25"> 
+                    <h3 class="font-weight-bolder code">434</h3>
+                    <p class="small"> Real Professionals </p>
+                </div>
+                
+            </div>
+        </div>
+            
+        
+    </div>
+    
+    
+   
+    
+    
+    <!-- last Projects -->
+    
+    
+    <div class="container  mb-5">
+        <div class="row   justify-content-center align-content-center align-self-center mb-5" >
+            <div class="col-6 font1 text-center">
+                <h4 class="">Our Latest Featured Projects </h4>
+                <p class="text-secondary">Who are in extremely love with eco friendly system. </p>
+            </div>
+        </div>
+        
+        
+        <div class="row  justify-content-center align-content-center  " >
+            <div class=" col-lg-6 col-12 align-self-center  font1 text-center">
+                <ul class="nav nav-pills mb-5  text-dark " role="tablist">
+                    <li class="nav-item" > 
+                        <a class="nav-link a4 active" data-toggle="pill" href="#all" >ALL </a>
+                    </li>
+                    <li class="nav-item" > 
+                        <a class="nav-link a4" data-toggle="pill" href="#vector" >Vector </a>
+                    </li>
+                    <li class="nav-item" > 
+                        <a class="nav-link a4" data-toggle="pill" href="#raster" >RASTER </a>
+                    </li>
+                    <li class="nav-item" > 
+                        <a class="nav-link a4" data-toggle="pill" href="#uiux" > UI/UX </a>
+                    </li>
+                    <li class="nav-item" > 
+                        <a class="nav-link a4" data-toggle="pill" href="#printing" >PRINTING </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+            <div class="tab-content m-0" >
+                
+                
+                <div class="container tab-pane active" id="all"  >
+                    <div class="row">
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p1.jpg"  class=" w-100 h-75 " >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p2.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6" >
+                             <img src="img/p3.jpg" class="w-100 h-75">
+                            <div class="text-center text-dark">
+                                <h6 >Creative Poster Design </h6>
+                                <p class="small text-secondary"> Agency</p>
+                            </div>
+                        </div>
+                   
+                        <div class="col-lg-4 col-6" >
+                             <img src="img/p4.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >Embosed Logo Design</h6>
+                                <p class="small text-secondary"> Portal</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p5.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 > 3D Helmet Design </h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6" >
+                             <img src="img/p6.jpg" class="w-100 h-75">
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design </h6>
+                                <p class="small text-secondary"> raster</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div >
+                
+                
+                <div class="container tab-pane fade" id="vector">
+                     <div class="row  ">
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p1.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-6  " >
+                             <img src="img/p5.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >3D Helmet Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="container tab-pane fade" id="raster">
+                     <div class="row ">
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p2.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-6  " >
+                             <img src="img/p6.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >3D Helmet Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="container tab-pane fade" id="uiux">
+                     <div class="row">
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p3.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                         <div class="col-lg-4 col-6 " >
+                             <img src="img/p6.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                         
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="container tab-pane fade" id="printing"  >
+                    <div class="row ">
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p4.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 " >
+                             <img src="img/p1.jpg" class="w-100 h-75" >
+                            <div class="text-center text-dark">
+                                <h6 >2D Vinyl Design</h6>
+                                <p class="small text-secondary"> vector</p>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                       
+                    </div>
+                    
+                    
+                </div >
+                
+                
+            
+            </div>
+    
+
+    </div>
+    
+    
+    
+    
+    
+    <!-- client feedback -->
+    
+    
+    <div class="flex1 mb-5 pt-5 pb-5">
+        <div class="container ">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 font1 text-center">
+                    <h4 class=""> Client’s Feedback About Me </h4>
+                    <p class="text-secondary">
+                        It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.
+                    </p>
+                </div>
+            </div>
+                <div class=" d-flex row">
+                <div class="col-md-6  col-12">
+                    <div class="media border p-3 bg-white ">
+                        <img src="img/user.png" alt="user" class="pr-4 pt-4  rounded-circle" >
+                        <div class="media-body text-secondary small">
+                            <p >
+                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
+		                    </p>
+                            <h6 class="text-dark">Harriet Maxwell</h6>
+                            <p  >CEO at Google</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md-6  col-12">
+                    <div class="media border p-3 bg-white">
+                        <img src="img/user.png" alt="user" class="pr-3 pt-3 rounded-circle" >
+                        <div class="media-body text-secondary small">
+                            <p >
+                                 A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.  
+		                    </p>
+                            <h6 class="text-dark">Carolyn Craig</h6>
+                            <p  >CEO at Facebook</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+    
+    
+    
+    <!-- choose  plans --> 
+    <div class="mb-7" >
+        <div class="container mb-5"> 
+            <div class="row justify-content-center mb-5"> 
+                <div class="col-12 font1 text-center" > 
+                     <h2 class="">  Choose Your Plan </h2>
+                     <p class="text-secondary">
+                        When someone does something that they know that they shouldn’t do, did they.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row bg1 mb-5">
+                <div   class="    col-lg-3  col-6 plan p-3  text-center" > 
+                    
+                    <div class=" pt-3">
+                        <div class="circlepart mx-auto  ">
+                            <h3 > 01 </h3>
+                        </div> 
+                        <h5 class=""> Economy</h5>
+                        <p class=" text-secondary"> For the individual </p>
+                    </div>
+                    <div class="small text-secondary" > 
+                        <hr>
+                        <p>Secure Online Transfer</p>
+                        <hr>
+                        <p>Unlimited Styles for interface</p>
+                        <hr>
+                        <p>Reliable Customer Service</p>
+                        <hr>			
+                    </div>
+                    <div class="bottom-part">
+                        <h2 id="price">£199.00</h2>
+                        <a class="text-uppercase a5 " href="#" >Buy Now</a>
+				    </div>
+                    
+                </div>
+                
+                
+                <div   class="    col-lg-3  col-6  p-3  text-center"> 
+                    
+                    <div class=" pt-3">
+                        <div class="circlepart mx-auto  ">
+                            <h3 > 02 </h3>
+                        </div> 
+                        <h5 class=""> Business </h5>
+                        <p class=" text-secondary"> For the individual </p>
+                    </div>
+                    <div class="small text-secondary" > 
+                        <hr>
+                        <p>Secure Online Transfer</p>
+                        <hr>
+                        <p>Unlimited Styles for interface</p>
+                        <hr>
+                        <p>Reliable Customer Service</p>
+                        <hr>			
+                    </div>
+                    <div class="bottom-part">
+                        <h2 id="price">£299.00</h2>
+                        <a class="text-uppercase a5 " href="#" >Buy Now</a>
+				    </div>
+                    
+                </div>
+                
+                
+                <div   class="    col-lg-3  col-6  p-3  text-center"> 
+                    
+                    <div class=" pt-3">
+                        <div class="circlepart mx-auto  ">
+                            <h3 > 03 </h3>
+                        </div> 
+                        <h5 class=""> Premium </h5>
+                        <p class=" text-secondary"> For the individual </p>
+                    </div>
+                    <div class="small text-secondary" > 
+                        <hr>
+                        <p>Secure Online Transfer</p>
+                        <hr>
+                        <p>Unlimited Styles for interface</p>
+                        <hr>
+                        <p>Reliable Customer Service</p>
+                        <hr>			
+                    </div>
+                    <div class="bottom-part">
+                        <h2 id="price">£399.00</h2>
+                        <a class="text-uppercase a5 " href="#" >Buy Now</a>
+				    </div>
+                    
+                </div>
+                
+                
+                <div   class="    col-lg-3  col-6  p-3  text-center"> 
+                    
+                    <div class=" pt-3">
+                        <div class="circlepart mx-auto  ">
+                            <h3 > 04 </h3>
+                        </div> 
+                        <h5 class=""> Excluisive </h5>
+                        <p class=" text-secondary"> For the individual </p>
+                    </div>
+                    <div class="small text-secondary" > 
+                        <hr>
+                        <p>Secure Online Transfer</p>
+                        <hr>
+                        <p>Unlimited Styles for interface</p>
+                        <hr>
+                        <p>Reliable Customer Service</p>
+                        <hr>			
+                    </div>
+                    <div class="bottom-part">
+                        <h2 id="price">£499.00</h2>
+                        <a class="text-uppercase a5 " href="#" >Buy Now</a>
+				    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    <!-- lastest blogs   -->
+    <div class="bg1" >
+        <div class="container pt-5 ">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6 col-12 font1 text-center">
+                    <h3 class=""> Latest Posts From Our Blog </h3>
+                    <p class="text-secondary middle ">
+                        You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving and expanding the business
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="row justify-content-center ">
+                <div class=" col-lg-4 align-self-center col-md-6 text-secondary over mb-5 ">
+                    <div class="pb-1 mb-1">
+                        <img src="img/b1.jpg" alt="p1" class="w100 h-100 d-block m-auto">
+                    </div>
+                    <div class="d-flex m-1 " >
+                        <div class="float-left mr-auto">
+                            <img src="img/user.png" alt="user"  class="float-left mr-2">
+                            <p  class="float-left">Mark Wiens</p>
+                        </div>
+                       
+                        <div>
+                             13 DEC
+                            <span> <i class="fa fa-heart"></i> </span>15
+                            <span> <i class="fa fa-comment"></i> </span>20
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="text-secondary">
+                        <a href="#" class="a2 p-1" > <h5> Break Through Self Doubt And Fear</h5></a>
+                        <P>
+                            Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.
+                        </P>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class=" col-lg-4 col-md-6 align-self-center  text-secondary  over mb-5">
+                    <div class="pb-1 mb-1">
+                        <img src="img/b2.jpg" alt="p1" class="w100 h-100 d-block m-auto">
+                    </div>
+                    <div class="d-flex m-1 " >
+                        <div class="float-left mr-auto">
+                            <img src="img/user.png" alt="user"  class="float-left mr-2">
+                            <p  class="float-left">Mark Wiens</p>
+                        </div>
+                       
+                        <div>
+                             13 DEC
+                            <span> <i class="fa fa-heart"></i> </span>15
+                            <span> <i class="fa fa-comment"></i> </span>20
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="text-secondary">
+                        <a href="#" class="a2 p-1" > <h5> Portable Fashion for young women</h5></a>
+                        <P>
+                            You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.
+                        </P>
+                    </div>
+                    
+                </div>
+                
+                <div class=" col-lg-4 col-md-6 align-self-center text-secondary over  mb-5 ">
+                    <div class="pb-1 mb-1">
+                        <img src="img/b3.jpg" alt="p1" class="w100 h-100 d-block m-auto">
+                    </div>
+                    <div class="d-flex m-1 " >
+                        <div class="float-left mr-auto">
+                            <img src="img/user.png" alt="user"  class="float-left mr-2">
+                            <p  class="float-left">Mark Wiens</p>
+                        </div>
+                       
+                        <div>
+                             13 DEC
+                            <span> <i class="fa fa-heart"></i> </span>15
+                            <span> <i class="fa fa-comment"></i> </span>20
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="text-secondary">
+                        <a href="#" class="a2 p-1"  > <h5 class="">Do Dreams Serve As A Premonition</h5></a>
+                        <P>
+                            So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved..
+                        </P>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    
+    <!-- carousel -->
+    <div class="lnrgrad p-5 ">
+        <div class="container  ">
+            <!--<div id="carousel1" cclass="carousel slide" data-ride="carousel"  data-interval="5000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="1" class="active"> </li>
+                    <li data-target="#carousel1" data-slide-to="2" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="3" class="active"></li>
+                    <li data-target="#carousel1" data-slide-to="4" class="active"></li>
+                </ol>-->
+                <div class="  row justify-content-center  "  >
+                    <div class=" col-lg-2 col-md-4 col-6   opaci  " >
+                        <img src="img/l1.png" alt="l1" class="m-2" id="img">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 opaci ">
+                        <img src="img/l2.png" alt="l2" class="m-2" id="img2">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6  opaci"> 
+                        <img src="img/l3.png" alt="l3" class="m-2" id="img3">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6    opaci" > 
+                        <img src="img/l4.png" alt="l4" class="m-2" id="img4">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6   opaci"> 
+                        <img src="img/l5.png" alt="l5" class="m-2 " id="img5">
+                    </div>
+                
+                </div>
+               <!-- <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+                   <!-- <span class="carousel-control-prev-icon"> </span>--
+                </a>
+                
+                <a class="carousel-control-next" href="#carousel1" data-slide="next">
+                   <!-- <span class="carousel-control-next-icon"> </span>--
+                </a>-->
+                
+                
+            <!--</div>-->
+            
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    <!--footer -->
+    <div class="foot">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-lg-5 col-12 mb-5">
+                    <div>
+                        <h4 class="text-white">About Me</h4>
+                        <p>
+                         We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="Arafat.A.Ali" target="_blank">ARAFAT.A.ALI </a> 
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-lg-5 col-12 mb-5">
+                    <div>
+                        <h4 class="text-white">Newsletter</h4>
+                        <p>Stay updated with our latest trends</p>
+                    </div>
+                    <form action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Your Email " name="search">
+                            <div class="input-group-btn search">
+                                <button class="btn btn-default " type="submit" >
+                                    <i class="fa fa-search text-white"></i>
+                                </button> 
+                            </div>
+                        </div>
+                    </form>
+                
+                </div>
+                <div class="col-lg-2 col-12 mb-5">
+                    <div>
+                         <h4 class="text-white">Follow Me</h4>
+                        <p>Let us be social</p>
+                    </div>
+                    
+                    <div class="text-white">
+                        <span class="p-1"><i class="fa fa-facebook"></i></span>
+                        <span class="p-1"><i class="fa fa-twitter"></i></span>
+                        <span class="p-1"><i class="fa fa-dribbble"></i></span>
+                        <span class="p-1"><i class="fa fa-behance"></i></span>
+                        
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+   
+    
+    
+    
+    
+
+    
+    <script src="carsouel.js"> </script>
+    
+    <script>
+        
+       
+        $(document).ready(function(){
+    $("#moda1").click(function(){ $("body").load("template10"); }); });
+        
+       
+        $(document).ready(function(){
+    $("#drop12").click(function(){
+        $("#hide0").show(); 
+        $(".drop").css("height","");
+    }); });
+        
+        $(document).ready(function(){$("#blog").click(function(){$("#hid1").toggle();  }); });
+        
+          $(document).ready(function(){ $("#page").click(function(){ $("#hid2").toggle();}); });
+        
+          $(document).ready(function(){$("#hid2").click(function(){ $("#hid3").toggle(); }); });
+        
+        
+        function myfun1()
+        {
+            var y =document.getElementById("hide0").style.height;
+            //var y1=window.getComputedStyle(y).getPropertyValue("height") ;
+            
+            var x =document.getElementsByClassName("hidden")[0] ;
+            var x0=window.getComputedStyle(x).getPropertyValue("display") ;
+            
+            var x1 =document.getElementById("hid2").style.display ;
+            var x12=window.getComputedStyle(x1).getPropertyValue("display") ;
+            
+            var x2 =document.getElementById("hid3").style.display ;
+            var x22=window.getComputedStyle(x2).getPropertyValue("display") ;
+            
+            if( x0 == "none" )
+                {
+                    y = "100%";
+                   
+                }
+            else
+                
+                {
+                    y = "auto"; 
+                   
+                }
+        }
+        
+        document.getElementById("blog").addEventListener("click",myfun1);
+        
+        
+       
+        
+        
+           
+        
+
+    
+    </script>
+    
+    
+    
+     <script src="temmplate10.js"> </script>
+    
+    
+    
+    
+    
+    
+        
+         
+         
+         
+         
+   
+    
+    
+
+   
+   
+   
+</body>
+</html>

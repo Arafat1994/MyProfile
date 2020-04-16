@@ -1,0 +1,36 @@
+   
+          
+          
+          
+          function displayNextImage() {
+              
+              
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+              
+              y = (y === images2.length - 1) ? 0 : y + 1;
+              document.getElementById("img2").src = images2[y];
+              
+              z = ( z === images3.length - 1) ? 0 : z + 1;
+              document.getElementById("img3").src = images3[z];
+              
+              q = (q === images4.length - 1) ? 0 : q + 1;
+              document.getElementById("img4").src = images4[q];
+              
+              w = (w === images5.length - 1) ? 0 : w + 1;
+              document.getElementById("img5").src = images5[w];
+             
+          }
+
+          
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images  = [ "img/l1.png" , "img/l2.png" , "img/l3.png" , "img/l4.png" , "img/l5.png"], x = -1;
+          var images2  = ["img/l2.png" , "img/l3.png" , "img/l4.png" , "img/l5.png" , "img/l1.png"], y = -1;
+          var images3  = ["img/l3.png" , "img/l4.png" , "img/l5.png" , "img/l1.png" , "img/l2.png"], z = -1;
+          var images4  = ["img/l4.png" , "img/l5.png" , "img/l1.png" , "img/l2.png" , "img/l3.png"], q = -1;
+          var images5  = ["img/l5.png" , "img/l1.png" , "img/l2.png" , "img/l3.png" , "img/l4.png"], w = -1;
+          

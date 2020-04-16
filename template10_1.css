@@ -1,0 +1,328 @@
+
+.navbar-nav
+{
+    position: relative;
+    
+}
+
+
+
+.ul-2 
+{
+    position:absolute;
+    right: 0;
+    
+}
+
+
+.for-small
+{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   .for-large
+     {
+      display: none;
+     }
+    .for-small
+    {
+        display: block;
+    }
+    .drop
+    {
+        display: none;
+        
+    }
+    #moda1
+    {
+        display: none;
+    }
+    
+}
+
+
+
+
+
+body
+{
+    position: relative;
+}
+.drop 
+{
+    
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color:#040204;
+    opacity:.8;
+    color: white;
+    width: 50%;
+    padding:0 15px 0 15px;
+    overflow:visible;
+    
+}
+
+
+.drop li
+{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.hidden
+{
+    display: none;
+    padding-right:15px;
+    
+
+}
+
+.hei12
+{
+    
+}
+.drop li 
+{
+  line-height: 2px;  
+}
+    
+
+
+
+
+
+
+
+
+
+.a2
+{
+    color: black ;
+    text-decoration: none;
+    font-size:13px;
+    
+}
+
+
+
+.a2:hover
+{
+    color:skyblue;
+    text-decoration: none;
+}
+
+
+.active
+{
+    color:skyblue;
+}
+
+
+.bg1
+{
+   background-color:ghostwhite;
+}
+
+
+.drop1,.drop2
+{
+    position:relative;
+    display: inline-block;
+    margin: 0;
+}
+.dropdown1,.dropdown2
+{
+    border:1px solid white;
+    background-color: white;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    min-width: 100px;
+    z-index: 1;
+    padding:3px;
+    margin:0px;
+    
+}
+
+
+
+.drop1:hover  .dropdown1  
+{
+    display: block;
+}
+.drop2:hover .dropdown2
+{
+    display: block;
+}
+.dropdown2
+{
+    top:5px;
+    right:55px;   
+}
+
+
+
+.flex1
+{
+  background-color:ghostwhite;
+}
+
+
+
+.font1
+{
+    font-size:13px;
+}
+
+
+.butt
+{
+    font-size: 15px;
+    width:200px;
+}
+
+
+.font2
+{
+    font-size: 20px;
+    
+}
+
+
+.img2
+{
+    width:90%;
+}
+
+
+
+.btn1
+{
+    color: white;
+     background-image:linear-gradient(to right,blueviolet,cyan,lightseagreen,skyblue );
+    font-weight: normal;
+    font-family:monospace;
+    border:0px solid transparent;
+    padding:5px;
+}
+
+
+.lnrgrad
+{
+      background-image:linear-gradient(to right,blueviolet,cyan,lightseagreen,skyblue );
+    color: white;  
+}
+
+
+
+.offer-hover :hover
+{
+    color: #7306f9;
+    cursor:grab;
+}
+
+
+
+.counter
+{
+    padding:30px 0 30px 0;
+}
+ 
+
+
+.a4
+{
+    color:black;
+    background-color: transparent;
+    
+}
+
+
+
+a.active
+{
+    background-image:linear-gradient(to right,blueviolet,cyan,lightseagreen,skyblue );
+    color: white;
+}
+
+
+
+
+.circlepart
+{
+    border:20px solid lightgray;
+    padding: 20px;
+    border-radius: 50%;
+    width:50%;
+    
+}
+
+.black
+{
+    color: black;
+}
+
+
+hr
+{
+    font-weight: bold;
+}
+
+
+
+.a5
+{
+    background-color:white;
+    column-rule: black;
+    display: none;
+    
+}
+
+
+
+.opaci
+{
+    opacity:.5 ;
+    margin: 5px;
+}
+
+
+.opaci:hover
+{
+   opacity: 1; 
+}
+
+
+
+
+.foot
+{
+    background-color:#001c30;
+    color: gray;
+}
+
+
+
+.search
+{
+  background-color:#8a12ed;
+    
+}
+
+
+.over
+{
+    overflow: hidden;
+}
+
+
+
+
